@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   const navLinks = [
@@ -11,14 +12,15 @@ export const Navbar = () => {
   return (
     <header className="py-6">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <Link href="/" className="flex items-center justify-center w-10 h-10 bg-white text-black rounded-full font-bold text-xl">
-        </Link>
+        {/* The logo link is removed */}
+        <div className="flex-grow"></div> {/* This div will push the navigation to the right */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-gray-400 hover:text-white transition-colors">
               {link.label}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
       </nav>
     </header>
