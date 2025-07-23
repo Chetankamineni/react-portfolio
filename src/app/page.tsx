@@ -5,16 +5,16 @@ export default function HomePage() {
   // Dummy data for now. We'll fetch this from the database later.
   const projects = [
     {
-      slug: "one-blog",
-      title: "One Blog",
+      slug: "blog",
+      title: "Blog",
       description: "A simple full-stack blog.",
-      imageUrl: "https://placehold.co/600x400/111827/4b5563?text=One+Blog",
+      imageUrl: "https://placehold.co/600x400/111827/4b5563?text=Blog",
     },
     {
-      slug: "links",
-      title: "Links",
-      description: "All my social media links in one place.",
-      imageUrl: "https://placehold.co/600x400/111827/4b5563?text=Links",
+      slug: "projects",
+      title: "Projects",
+      description: "All my projects in one place.",
+      imageUrl: "https://placehold.co/600x400/111827/4b5563?text=Projects",
     },
   ];
 
