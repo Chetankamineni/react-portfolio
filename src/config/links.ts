@@ -2,7 +2,7 @@
 export const SOCIAL_LINKS = [
   {
     title: "GitHub",
-    href: "https://github.com/chetankamineni/react-portfolio",
+    href: "https://github.com/chetankamineni",
   },
   {
     title: "LinkedIn",
